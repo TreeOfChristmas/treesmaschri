@@ -1,0 +1,182 @@
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #999;
+    padding-bottom: 20px;
+    height: 80px;
+}
+
+.logo{
+    margin-right: 100px;
+}
+
+#icon{
+    color: blue;
+}
+
+/* .login{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+} */
+
+#kakaoLogin{
+    width: 135px;
+    margin-left: 50px;
+}
+
+.login:hover{
+    background-color: rgba(52, 52, 255, 0.089);
+}
+
+.tree{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+    font-size: 80px;
+     margin-top: 30px;
+}
+
+#tree{
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover{
+    opacity: 0.4;
+}
+
+.menu{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left1, .left2, .right1, .right2{
+    display: block;
+    width: 100%;
+    /* background-color: #00000049; */
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* 당연히 이부분은 수정할거임 */
+.left1{
+    background-color: #ACE2B2;
+    cursor: pointer;
+}
+
+.left1:hover{
+    /* background-color: #126134; */
+    background-color: #4D9E5E;
+    color: white;
+}
+
+.left2{
+    background-color: #E6ABA7;
+    cursor: pointer;
+}
+
+.left2:hover{
+    background-color: #BB4B43;
+    color: white;
+}
+
+.right1{
+    background-color: #F2DCAF;
+    cursor: pointer;
+}
+
+.right1:hover{
+    background-color: #EAC24A;
+}
+
+.right2{
+    background-color: #9CC4F0;
+    cursor: pointer;
+}
+
+.right2:hover{
+    background-color: #4778CE;
+    color: white;
+}
+
+.left_menu, .right_menu{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.paper_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: none;
+}
+
+.paper{
+    width: 700px;
+    height: 400px;
+    margin: 200px auto 0;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea{
+    display: block;
+    width: 500px;
+    height: 250px;
+    margin: 60px auto 0;
+    margin-left: 100px;
+    font-size: 20px;
+    resize: none;
+}
+
+.paper>.close{
+    height: 35px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    line-height: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+/* @media(min-width: 320px) and (max-width: 425px){
+    header{ */
+        /* width: 100%; */
+        
+    /* }
+} */
