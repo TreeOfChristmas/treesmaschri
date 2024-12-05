@@ -11,31 +11,27 @@ a{
 }
 
 .header{
-    margin-top: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #999;
-    padding-bottom: 20px;
-    height: 80px;
+    padding-bottom: 30px;
+    background-color: #f8efc986;
+    height: 100px;
+}
+
+.main_bg{
+    background-color: #f8efc9;
 }
 
 .logo{
-    margin-right: 100px;
+    width: 100px;
 }
 
 #icon{
     color: blue;
 }
-
-/* .login{
-    border: 1px solid gray;
-    border-radius: 20px;
-    padding: 0 10px;
-    cursor: pointer;
-    height: 40px;
-    line-height: 40px;
-} */
 
 #kakaoLogin{
     width: 135px;
@@ -47,7 +43,6 @@ a{
 }
 
 .tree{
-    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,6 +55,7 @@ a{
 }
 
 #tree{
+    width: 700px;
     cursor: pointer;
 }
 
@@ -68,7 +64,6 @@ a{
 }
 
 .menu{
-    margin-top: 80px;
     display: flex;
     justify-content: space-around;
 }
@@ -137,8 +132,8 @@ a{
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.45);
     display: none;
 }
@@ -157,10 +152,12 @@ textarea{
     display: block;
     width: 500px;
     height: 250px;
-    margin: 60px auto 0;
+    margin: 70px auto 0;
     margin-left: 100px;
     font-size: 20px;
     resize: none;
+    border-radius: 10px;
+    border: 1px solid #2757A4;
 }
 
 .paper>.close{
@@ -169,14 +166,6 @@ textarea{
     transform: rotate(45deg);
     line-height: 35px;
     cursor: pointer;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
-
-
-/* @media(min-width: 320px) and (max-width: 425px){
-    header{ */
-        /* width: 100%; */
-        
-    /* }
-} */
