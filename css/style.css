@@ -1,4 +1,25 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+@font-face {
+    font-family: 'Ownglyph_StudyHard-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_StudyHard-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoonnuBasicGothicRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,14 +36,15 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #999;
     padding-bottom: 30px;
-    background-color: #f8efc986;
+    background-color: #222E44;
     height: 100px;
 }
 
 .main_bg{
-    background-color: #f8efc9;
+    background-color: #233555;
+    height: 100%;
+    padding-bottom: 20px;
 }
 
 .logo{
@@ -55,7 +77,7 @@ a{
 }
 
 #tree{
-    width: 700px;
+    width: 900px;
     cursor: pointer;
 }
 
@@ -148,16 +170,38 @@ a{
     justify-content: space-around;
 }
 
+.text{
+    margin-top: 20px;
+}
+
+.title{
+    font-family: Ownglyph_StudyHard-Rg;
+    display: block;
+    margin-top: 10px;
+    margin-right: 100px;
+    height: 50px;
+    font-size: 35px;
+    margin-left: 210px;
+}
+
 textarea{
     display: block;
     width: 500px;
     height: 250px;
-    margin: 70px auto 0;
+    margin: 20px auto 0;
     margin-left: 100px;
+    margin-right: 50px;
     font-size: 20px;
     resize: none;
     border-radius: 10px;
     border: 1px solid #2757A4;
+    font-family: NoonnuBasicGothicRegular;
+    padding: 10px 0 0 10px;
+}
+
+#paper::placeholder{
+    font-size: 16px;
+    padding: 4px 0 0 6px;
 }
 
 .paper>.close{
