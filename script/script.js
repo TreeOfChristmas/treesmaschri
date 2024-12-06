@@ -1,7 +1,7 @@
 $(document)
-.on('click', '.left2, .close', popToggle)
+.on('click', '.ornament, .close', popToggle)
 const image = document.getElementById('tree');
-const popup = document.querySelector('.left2')
+const popup = document.querySelector('.ornament')
 const scroll = document.querySelector('.container')
 
 function popToggle(){
