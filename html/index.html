@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Tree</title>
+    <title>Treesmas Chri</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -13,42 +13,78 @@
     <script src="https://kit.fontawesome.com/721fcc9f3c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <a href="./index.html"><img src="../img/logo.png" alt="로고" class="logo"></a>
-            <a href="javascript:kakaoLogin();"><img src="../img/kakaoLogin.png" alt="login" id="kakaoLogin"></a>
-        </header>
-        <div class="main_bg">
-            <div class="tree">
-                <span id="scroll-left" class="material-symbols-outlined">
-                    keyboard_arrow_left
-                </span>
-                <div class="christmas_tree">
-                    <p class="school">서울디지텍고등학교의 트리</p>
-                    <img src="../img/main_tree.png" alt="tree" id="tree">
+    <header class="header">
+        <a href="./index.html"><img src="../img/logo.png" alt="로고" class="logo"></a>
+        <a href="javascript:kakaoLogin();"><img src="../img/kakaoLogin.png" alt="login" id="kakaoLogin"></a>
+    </header>
+    <div class="main_bg">
+        <div class="tree">
+            <span id="scroll-left" class="material-symbols-outlined">
+                keyboard_arrow_left
+            </span>
+            <div class="christmas_tree">
+                <p class="school">서울디지텍고등학교의 트리</p>
+                <img src="../img/main_tree.png" alt="tree" id="tree">
+                <div class="img_container">
+                    <div class="ornament" id="ornament1"></div>
+                    <div class="ornament" id="ornament2"></div>
+                    <div class="ornament" id="ornament3"></div>
+                    <div class="ornament" id="ornament4"></div>
+                    <div class="ornament" id="ornament5"></div>
                 </div>
-                <span id="scroll-right" class="material-symbols-outlined">
-                    keyboard_arrow_right
-                </span>
-                <div class="menu">
-                    <div class="ornament">
-                        트리 꾸미기
-                    </div>
-                    <a href="./sub.html"><div class="exchange">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div></a>
+            </div>
+            <span id="scroll-right" class="material-symbols-outlined">
+                keyboard_arrow_right
+            </span>
+            <div class="menu">
+                <div class="adornment" onclick="returnDefault()">
+                    트리 꾸미기
                 </div>
+                <a href="./sub.html"><div class="exchange">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div></a>
             </div>
         </div>
-        <div class="paper_bg">
-            <div class="paper">
-                <div class="text">
-                    <div class="title">전하고 싶은 말을 적어주세요</div>
-                    <textarea name="paper" id="paper" placeholder="여기에 입력해주세요"></textarea>   
+    </div>
+    <div class="paper_bg">
+        <div class="paper">
+            <div class="ornament_adornment">
+                <div class="title">장식을 선택해주세요</div>
+                <div class="select_ornament">
+                    <img src="../img/candy_cane.PNG" alt="이미지1" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/candy_egg.PNG" alt="이미지2" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/candy_lollipop.PNG" alt="이미지3" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/deer.PNG" alt="이미지4" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/deer_bell.PNG" alt="이미지5" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/deer_santa.PNG" alt="이미지6" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/hat_belt.PNG" alt="이미지7" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/hat_normal.PNG" alt="이미지8" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/hat_normal.PNG" alt="이미지9" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/man_bucket.PNG" alt="이미지10" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/man_normal.PNG" alt="이미지11" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/man_scarf.PNG" alt="이미지12" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/ornament_blue.PNG" alt="이미지13" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/ornament_green.PNG" alt="이미지14" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/ornament_red.PNG" alt="이미지15" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/snow.PNG" alt="이미지16" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/snow_flake.PNG" alt="이미지17" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/flake.PNG" alt="이미지18" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/socks_green.PNG" alt="이미지19" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/socks_normal.PNG" alt="이미지20" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/socks_red.PNG" alt="이미지21" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/tree_light.PNG" alt="이미지22" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/tree_normal.PNG" alt="이미지23" onclick="selectImage(this)" class="ornaments">
+                    <img src="../img/tree_snow.PNG" alt="이미지24" onclick="selectImage(this)" class="ornaments">
                 </div>
-                <span class="close">+</span>
+                <button class="btn" onclick="showTextSection()">다음</button>
             </div>
+            <div class="want_to_say">
+                <div class="title" id="mind">전하고 싶은 말을 적어주세요</div>
+                <textarea name="paper" id="paper" placeholder="여기에 입력해주세요"></textarea>
+                <button onclick="displayImage()" class="btn" id="success">완료</button>
+            </div>
+            <span class="close">+</span>
         </div>
     </div>
     <!-- <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js" integrity="sha384-DKYJZ8NLiK8MN4/C5P2dtSmLQ4KwPaoqAfyA/DfmEc1VDxu4yyC7wy6K1Hs90nka" crossorigin="anonymous"></script>

@@ -34,6 +34,11 @@
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden; /* 불필요한 스크롤 방지 */
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +48,10 @@
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.container{
+    height: 100vh;
 }
 
 .header{
@@ -93,10 +102,52 @@ a{
     font-family: Cafe24Shiningstar;
 }
 
+.christmas_tree{
+    height: 100vh;
+}
+
 #tree{
-    margin-top: -100px;
-    width: 863px;
+    margin-top: -100px;;
     cursor: pointer;
+    width: 850px;
+    /* position: relative; */
+}
+
+.ornament{
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid white; */
+}
+
+.ornament>img{
+    width: 100px;
+}
+
+#ornament1{
+    right: 950px;
+    top: 380px;
+}
+
+#ornament2{
+    right: 820px;
+    top: 450px;
+}
+
+#ornament3{
+    top: 520px;
+    right: 1020px;
+}
+
+#ornament4{
+    top: 580px;
+    right: 900px;
+}
+
+#ornament5{
+    top: 620px;
+    right: 750px;
 }
 
 .material-symbols-outlined:hover{
@@ -112,7 +163,7 @@ a{
     bottom: 70px;
 }
 
-.ornament{
+.adornment{
     border-radius: 20px;
     width: 192px;
     height: 67px;
@@ -160,7 +211,7 @@ a{
 
 .paper{
     width: 700px;
-    height: 400px;
+    height: 430px;
     margin: 200px auto 0;
     background-color: white;
     border-radius: 15px;
@@ -168,11 +219,62 @@ a{
     justify-content: space-around;
 }
 
-.text{
+.ornament_adornment{
+    margin-left: 100px;
+}
+
+.select_ornament{
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+}
+
+.select_ornament::-webkit-scrollbar{
+    width: 14px;
+    height: 14px;
+}
+.select_ornament::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
+}
+    
+.select_ornament::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
+}
+
+.select_ornament::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.select_ornament>img{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.select_ornament>img:hover{
+    border: 2px solid #333;
+}
+
+.want_to_say{
     margin-top: 20px;
+    display: none;
 }
 
 .title{
+    font-family: Ownglyph_StudyHard-Rg;
+    display: block;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 35px;
+    margin-left: 140px;
+}
+
+#mind{
     font-family: Ownglyph_StudyHard-Rg;
     display: block;
     margin-top: 10px;
@@ -210,4 +312,25 @@ textarea{
     cursor: pointer;
     margin-top: 5px;
     margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#success{
+    margin-left: 50px;
+    margin-top: 20px;
 }
