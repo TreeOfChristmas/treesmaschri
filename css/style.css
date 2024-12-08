@@ -82,6 +82,12 @@ a{
     background-color: rgba(52, 52, 255, 0.089);
 }
 
+#profile-image{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
 .tree{
     display: flex;
     align-items: center;

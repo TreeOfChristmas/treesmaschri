@@ -22,13 +22,38 @@ askForLocation();
 
 
 Kakao.init('f7d1c40b420e91c5d77a70b4d6badd09')
-Kakao.isInitialized()
+document.querySelector('#kakaoLogin').onclick = function() {
+    Kakao.Auth.login({
+        scope: 'profile_nickname',
+        success: function(authObj) {
+            console.log('로그인 성공:', authObj)
+            const accesToken = authObj.access_token
 
-Kakao.Auth.authorize({
-    redirectUri: 'http://localhost:5500/webapp/html/index.html',
-    scope: 'profile_nickname'
-  });
+            Kakao.API.request({
+                url: '/v2/user/me',
+                success: function(response) {
+                    console.log('사용자 정보:', response)
 
+                    const profileImage = response.properties.profile_image
+
+                    const loginImg = document.getElementById('kakaoLogin')
+                    loginImg.style.display = 'none'
+
+                    const profileImg = document.getElementById('profile-image')
+                    profileImg.style.display = 'block'
+                    profileImg.src = profileImage
+                },
+                fail: function(error) {
+                    console.error('API 호출 실패:', error)
+                }
+            })
+        },
+        fail: function(error){
+            console.error('로그인 실패:', error)
+        }
+
+    })
+}
 
   // 이미지를 넣을 위치를 추적
 
